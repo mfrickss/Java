@@ -36,7 +36,9 @@ public class bankingProgram {
                     balance = (withdraw(balance));
                     break;
                 case 4:
+                    linha();
                     System.out.println("Thank you for using our bank! Have a nice day.");
+                    linha();
                     break;
                 default:
                     linha();
@@ -59,19 +61,19 @@ public class bankingProgram {
     }
 
 
-    static double depositBRO() {
-
-        double amount;
-        System.out.print("Enter an amount to be deposited: ");
-        amount = scanner.nextDouble();
-
-        if (amount < 0) {
-            System.out.println("Amount can't be negative");
-            return 0;
-        } else {
-            return amount;
-        }
-    }
+//    static double depositBRO() {
+//
+//        double amount;
+//        System.out.print("Enter an amount to be deposited: ");
+//        amount = scanner.nextDouble();
+//
+//        if (amount < 0) {
+//            System.out.println("Amount can't be negative");
+//            return 0;
+//        } else {
+//            return amount;
+//        }
+//    }
 
     static double deposit(double balance) {
         linha();
